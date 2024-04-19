@@ -16,8 +16,10 @@ if __name__ == "__main__":
     done = False
     while not done:
         result, course_mode = prompt_user_input(course_mode)
+        print(type(result))
+        print(result)
         print(textwrap.dedent("""
-        Your GPA is: %i
+        Your GPA is: %f
         Mode: %s
         """ % (result, course_mode.get_name())))
         user_choice = input("Would you like to continue?  (y,n)")
